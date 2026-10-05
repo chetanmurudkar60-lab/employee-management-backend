@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temporary dependency snapshot
+requirements-full.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User uploaded files
+uploads/
