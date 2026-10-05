@@ -5,6 +5,7 @@ from app.routers import admin
 from app.database import Base, engine
 from app.models.employee import Employee
 from app.models.user import User
+import os
 from app.models.complaint import Complaint
 
 from app.models.audit_log import AuditLog
@@ -23,6 +24,7 @@ app = FastAPI(
     description="Employee Management System with JWT Authentication",
     version="1.0.0"
 )
+os.makedirs("uploads/profile-images", exist_ok=True)
 app.mount(
     "/uploads",
     StaticFiles(directory="uploads"),
